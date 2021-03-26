@@ -134,6 +134,11 @@ section {
   margin-right: auto;
 }
 
+#helloWorld {
+  width: 25rem;
+  height: auto;
+}
+
 .col {
   width: calc(25% - 2rem);
   margin: 1rem;
@@ -311,7 +316,7 @@ section {
   position: relative;
   margin: 1rem 3rem 1rem 1rem;
   clear: both;
-  width: 25vh;
+  max-width: 28vh;
   height: 37vh;
   padding: 0px;
   margin-left: 3rem;
@@ -332,7 +337,8 @@ section {
 .navIcons {
   display: flex;
   justify-content: space-around;
-  margin-top: 3%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   width: 9rem;
 }
 .navIcons img {
