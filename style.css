@@ -22,6 +22,7 @@ body {
 
 section {
   border: solid 1px #C6D4DF;
+  margin-top: 7rem;
 }
 
 .titre {
@@ -352,6 +353,10 @@ nav button {
   background-color: rgba(13, 13, 27, 0.12);
   margin-bottom: 2rem;
   margin-left: 3rem;
+}
+
+.bottom {
+  margin-bottom: 5%;
 }
 
 * {
