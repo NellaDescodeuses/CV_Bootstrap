@@ -12,38 +12,37 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  color: #C6D4DF;
+  color: $bodyColor;
+  font-family: 'Spirax', cursive;
+  text-align: center;
 }
 .row{
   background-color:$rowBgColor;
 }
-h2, .container-fluid{
-  font-family: 'Spirax', cursive;
+section{
+  border: solid 1px $bodyColor;
 }
-h3,h2{
-  text-align: center;
+.titre{
+  text-decoration: underline;
+  margin-top: 3vh;
 }
-// Navbar
-// .col-3{
-//   @include border;
-//   border-width: medium;
-//   height: auto;
-// }
+//partie Gauche du cv
 #left{
   // align-items: center;
   // position:fixed;
   border-right: solid 1px lightgrey;
   background-color: $fondBurgerColor;
-  height: 99vh;
+  height: 100vh;
 }
 #leftContenu{
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 7vh;
 }
 #pictureOfme{
-  max-width: 13vh;
-  height: auto;
+  max-width: 35vh;
+  height: 23vh;
   border-radius: 6%;
 }
 #list-example{
@@ -67,8 +66,8 @@ align-items: center;
 .leftIcons{
   display: flex;
   justify-content: space-around;
-  margin-top: 4%;
-  width: 9rem;
+  margin-top: 2rem;
+  width: 11rem;
   bottom: 0%;
   img{
     width: 1rem;
@@ -85,10 +84,13 @@ align-items: center;
   @include border;
   font-size: 1.5rem;
   margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 // section à apropos
 #apropos{
-  border: solid 4px green;
+  // border: solid 4px green;
   font-size: 1.4rem;
 }
 #sideWays{
@@ -103,15 +105,28 @@ align-items: center;
     font-size: 3rem;
   }
 }
+//Section Compétences
 #competences{
-  border: solid 4px yellow;
+  // border: solid 4px yellow;
+  width: 100%;
+  height: auto;
+  // margin-bottom: 7rem;
+
 }
+#CarouselControls{
+  border: solid 1px black;
+  max-width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+//Section Expérience
 #experience{
-  border: solid 4px purple;
+  // border: solid 4px purple;
 }
 //Section Hobbies
 #hobbies{
-border: solid 4px red;
+// border: solid 4px red;
 }
 //flip card
 .col {
@@ -237,11 +252,11 @@ border: solid 4px red;
 }
 //Section contact
 #contact{
-  border: solid 4px grey;
+  // border: solid 4px grey;
 }
 .contact{
   background-color: rgba(131, 135, 130, 0.53);
-  width: 70%;
+  width: 20rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -251,14 +266,15 @@ border: solid 4px red;
   margin-right: auto;
 }
 .contactIcons{
+  // border:solid 3px cyan;
   display: flex;
   justify-content: space-around;
   margin-top: 4%;
-  width: 9rem;
+  width: 18rem;
   img{
     width: 2rem;
     height: auto;
-    margin-left: 12%;
+    margin-left: 0vh;
   }
 }
 //Menu Burger
@@ -411,10 +427,18 @@ nav button{
   font-size: 0.7rem;
   margin: .5rem 0 0;
 }
+@media screen and (max-width:500px) {
+  #fondBurger{
+    width: 50%;
+  }
+
+}
+
 @media screen and (min-width:768px) {
   #right{
+    margin-right: 0rem;
     margin-left: auto;
-    border: solid 3px brown;
+      // border: solid 3px brown;
   }
 }
 //   #left{

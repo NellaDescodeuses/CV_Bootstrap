@@ -10,13 +10,13 @@
   <title>CV</title>
 </head>
 <body>
-  <div class="container-fluid pr-0">
+  <div class="container-fluid">
     <div class="row">
       <!-- Nav bar (partie Gauche) -->
       <div id="left" class="position-fixed col-3 col-md-3 d-none d-md-block">
         <div id="leftContenu">
           <img id="pictureOfme" class="img-fluid" src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/moi.jpg" alt="Photo de Nella">
-          <h4 class="text-center">Développeuse Web Junior</h4>
+          <h4 class="titre text-center">Développeuse Web Junior</h4>
           <div id="list-example" class="text-center list-example list-group d-xs-none d-md-block">
             <a class="list-group-item list-group-item-action" href="#acceuil">Accueil</a>
             <a class="list-group-item list-group-item-action" href="#apropos">A propos</a>
@@ -32,17 +32,18 @@
             <a href="https://github.com/NellaDescodeuses" target="_blank"><img src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/github.svg" alt="lien GitHub"></a>
             <a href="#" target="_blank"><img src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/file-earmark-text.svg" alt="lien vers le cv pdf"></a>
           </div>
+          <p>&copy; 2021 NellaCv</p>
         </div>
       </div>
       <!-- Contenu (Partie Droite) -->
-      <div id="right" class="col col-md-9 mt-5 mb-5 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+      <div id="right" class="col col-md-9 mt-5 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
         <!-- Section Acceuil -->
         <section id="acceuil" class="mt-5">
           <h1>"Un développeur est à un bon site , ce qu'un vigneron est à un bon vin..."</h1>
         </section>
         <!-- Section A propos -->
         <section id="apropos">
-            <h2>A propos</h2>
+            <h2 class="titre">A propos</h2>
           <div id="sideWays">
             <p class="side">Nella Ruscade</p>
             <p>Curieuse et dynamique, je souhaite progresser dans le domaine du numérique afin de pouvoir m'épanouir en apportant ma touche de créativité.
@@ -50,8 +51,8 @@
           </div>
         </section>
         <!-- Section Compétences -->
-        <section id="competences" class="mt-5">
-          <h2>Compétences</h2>
+        <section id="competences" class="mt-5 mb-5">
+          <h2 class="titre">Compétences</h2>
           <div id="CarouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -76,7 +77,7 @@
         </section>
         <!-- Section Expérience -->
         <section id="experience" class="mt-5">
-          <h2>Diplômes</h2>
+          <h2 class="titre">Diplômes</h2>
           <div class="timeline">
             <p class="time timeline_year">2009<p>
             <div class="time">
@@ -88,7 +89,7 @@
             </div>
           </div>
         <!--Expérience-->
-          <h2>Expériences</h2>
+          <h2 class="titre">Expériences</h2>
           <div class="timeline">
             <p class="time timeline_year">2021<p>
             <div class="time">
@@ -134,7 +135,7 @@
         </section>
         <!-- Section Hobbies -->
         <section id="hobbies" class="mt-5">
-          <h2>Hobbies</h2>
+          <h2 class="titre">Hobbies</h2>
             <div class="row bg-transparent">
               <div class="col-12 col-sm-6 col-md-4 mt-4" ontouchstart="this.classList.toggle('hover');">
             		<div class="container">
@@ -194,7 +195,7 @@
             			<div class="back">
             				<div class="inner">
             				  <p>Du Boui-Boui à la table étoilée</p>
-                      <p>De la cuisine Française à la cuisine du Monde</p>
+                      <p>De la cuisine Française à celle du reste du Monde</p>
             				</div>
             			</div>
             		</div>
@@ -220,7 +221,7 @@
           </section>
           <!-- Section Contact -->
           <section id="contact" class="mt-5">
-            <h2>Me contacter</h2>
+            <h2 class="titre">Me contacter</h2>
             <div class="contact">
               <p>Téléphone: 06.59.43.34.57</p>
               <a href="mailto:nellaruscade.pro@gmail.com">email: nellaruscade.pro@gmail.com</a>
@@ -229,6 +230,7 @@
                 <a href="mailto:nellaruscade.pro@gmail.com"><img src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/envelope.svg" alt="lien email"></a>
                 <!-- target="_blank" ouvre le lien dans un nouvel onglet-->
                 <a href="https://github.com/NellaDescodeuses" target="_blank"><img src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/github.svg" alt="lien GitHub"></a>
+                <a href="#" target="_blank"><img src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/file-earmark-text.svg" alt="lien vers le cv pdf"></a>
               </div>
             </div>
           </section>
@@ -239,7 +241,7 @@
       <div class="collapse" id="menuBurger">
         <div id=fondBurger class="fixed-bottom col-4 offset-8 p-4">
         <img id="pictureBurger"class="img-thumbnail" src="/home/nella/Bureau/Exercice/Bootstrap/Cv_bootstrap/Assets/Images/moi.jpg" alt="Photo de Nella">
-        <h4 class="mt-3">Développeuse Web Junior</h4>
+        <h5 class="titre text-center">Développeuse Web Junior</h5>
         <div id="list-exampleBurger" class="list-example text-center list-group d-xs-none d-md-block">
           <a class="list-group-item list-group-item-action" href="#acceuil">Acceuil</a>
           <a class="list-group-item list-group-item-action" href="#apropos">A propos</a>
